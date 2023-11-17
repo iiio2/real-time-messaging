@@ -35,15 +35,19 @@
           </button>
         </div>
         <div class="lg:flex lg:gap-x-12">
+          {% if request.user.is_authenticated %}
           <a href="/rooms/" class="text-sm font-semibold leading-6 text-white"
             >Room</a
           >
+          <a href="/logout/" class="text-sm font-semibold leading-6 text-white" >Logout</a>
+          {% else %}
           <a href="/signup/" class="text-sm font-semibold leading-6 text-white"
             >Sign Up</a
           >
           <a href="/login/" class="text-sm font-semibold leading-6 text-white"
             >Login</a
           >
+          {% endif %}
         </div>
       </nav>
     </header>
