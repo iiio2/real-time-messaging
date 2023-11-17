@@ -74,7 +74,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'real_time_messaging.wsgi.application'
-ASGI_APPLICATION = 'djangochat.asgi.application'
+ASGI_APPLICATION = 'real_time_messaging.asgi.application'
+
 
 CHANNEL_LAYERS = {
     'default': {
